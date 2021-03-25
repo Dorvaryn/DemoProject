@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 
 ENV ANDROID_HOME "/home/gitpod/.android"
 ENV ANDROID_SDK_ROOT "/home/gitpod/.android" 
@@ -25,6 +25,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
     ${ANDROID_HOME}/cmdline-tools/cmdline-tools/bin/sdkmanager \"platform-tools\" \"extras;android;m2repository\" \"extras;google;m2repository\" \"extras;google;instantapps\" && \
     ${ANDROID_HOME}/cmdline-tools/cmdline-tools/bin/sdkmanager \"build-tools;${BUILD_TOOLS}\" \"platforms;android-${TARGET_SDK}\""
 
+RUN brew cask install intellij-idea-ce
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
 # RUN brew install bastet
