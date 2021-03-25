@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: /opt/idea/idea.sh
+  - init: /opt/idea-IC-203.7717.56/bin/idea.sh
 
 vscode:
   extensions:

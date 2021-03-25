@@ -26,7 +26,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
     ${ANDROID_HOME}/cmdline-tools/cmdline-tools/bin/sdkmanager \"build-tools;${BUILD_TOOLS}\" \"platforms;android-${TARGET_SDK}\""
 
 RUN bash -c "wget -q https://download.jetbrains.com/idea/ideaIC-2020.3.3.tar.gz -O /tmp/idea.tar.gz && \
-    sudo tar -xzf idea.tar.gz -C /opt && \
+    sudo tar -xzf /tmp/idea.tar.gz -C /opt && \
     rm -v /tmp/idea.tar.gz"
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
