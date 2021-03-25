@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: ./gradlew build
+  - init: /opt/idea/idea.sh
 
 vscode:
   extensions:
