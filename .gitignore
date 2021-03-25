@@ -14,3 +14,4 @@
 .cxx
 .project
 org.*
+.classpath
