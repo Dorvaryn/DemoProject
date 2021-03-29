@@ -29,7 +29,7 @@ RUN bash -c "wget -q https://download.jetbrains.com/idea/ideaIC-2020.3.3.tar.gz 
     sudo tar -xzf /tmp/idea.tar.gz -C /opt && \
     rm -v /tmp/idea.tar.gz"
     
-RUN sudo bash -c "echo '\n-Dsun.java2d.xrender=false' >> /opt/idea-IC-203.7717.56/bin/idea.vmoptions"
+RUN sudo bash -c "echo '-Dsun.java2d.xrender=false' >> /opt/idea-IC-203.7717.56/bin/idea.vmoptions"
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
 # RUN brew install bastet
