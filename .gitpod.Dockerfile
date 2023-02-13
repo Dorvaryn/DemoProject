@@ -13,7 +13,7 @@ RUN bash -c "wget -q https://dl.google.com/android/repository/commandlinetools-l
     rm -v /tmp/tools.zip"
 
 # Install SDK Packages
-ENV BUILD_TOOLS "32.1.11"
+ENV BUILD_TOOLS "32.1.0-rc1"
 ENV TARGET_SDK "32"
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
