@@ -1,8 +1,8 @@
 FROM gitpod/workspace-full
 
 ENV ANDROID_HOME "/home/gitpod/.android"
-ENV ANDROID_SDK_ROOT "/home/gitpod/.android" 
-ENV SDK_TOOLS "6858069_latest"
+ENV ANDROID_SDK_ROOT "/home/gitpod/.android"
+ENV SDK_TOOLS "9477386_latest"
 ENV PATH=$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
 
 # Install required dependencies
@@ -13,8 +13,8 @@ RUN bash -c "wget -q https://dl.google.com/android/repository/commandlinetools-l
     rm -v /tmp/tools.zip"
 
 # Install SDK Packages
-ENV BUILD_TOOLS "30.0.2"
-ENV TARGET_SDK "30"
+ENV BUILD_TOOLS "32.1.11"
+ENV TARGET_SDK "32"
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
              && sdk install java 11.0.10.j9-adpt && \ 
